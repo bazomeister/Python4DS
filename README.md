@@ -1,7 +1,3 @@
-# Python for Data Science - Weekly Exercises
-
-This repository will contain the weekly exercises from the **Python for Data Science** course. Each week, new exercises will be added and building upon the concepts covered in the sessions.
-
 ## Session 1: Exercises
 
 Session 1 focuses on Python basics like printing, variables, loops, lists, and simple functions. These tasks help me become comfortable with Python's core concepts.
