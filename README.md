@@ -2,6 +2,8 @@
 
 This repository will contain the weekly exercises from the **Python for Data Science** course. Each week, new exercises will be added and building upon the concepts covered in the sessions.
 
+---
+
 ## Session 1: Exercises
 
 Session 1 focuses on Python basics like printing, variables, loops, lists, and simple functions. These tasks help me become comfortable with Python's core concepts.
@@ -57,6 +59,7 @@ Session 1 focuses on Python basics like printing, variables, loops, lists, and s
 ### 17. **Simple Calculator**
    - Build a basic calculator that performs arithmetic operations based on user input.
 
+---
 
 ## Session 2: Exercises
 In this session, the focus is on working with Python environments, version control using Git, and setting up an IDE. The exercises include tasks like creating a FizzBuzz function, filtering data, building a simple to-do list, and a temperature converter.
@@ -80,26 +83,45 @@ In this session, the focus is on working with Python environments, version contr
    - Write a function `celsius_to_fahrenheit(celsius)` that converts Celsius to Fahrenheit.
    - Output the conversion for specific temperatures.
 
+---
 
 ## Session 3
 
 ### Object Oriented Programming
 This session focused on Object-Oriented Programming (OOP) in Python. It introduced key concepts such as classes, objects, attributes, and methods. The primary objective was to understand how to structure programs using classes and create objects that model real-world entities. The session covered OOP principles like abstraction, inheritance, and encapsulation code.
 
+---
 
-## Session 4
+# Session 4: Basic Libraries I  
 
-## Overview
-Session 4 provides am introduction to foundational Python libraries for data science. It covers numpy for numerical operations, scipy for scientific computing, and key utility libraries such as math, os, glob, and shutil.
+### Satellite Annotations Analysis  
 
-Exercises:
-- File Count: Count the total number of files in the annotations folder.
-- Naming Convention Compliance: Identify how many files adhere to the specified naming format.
-- Annotations by Month and Year: Count the annotations per month and year, and determine which month has the highest number.
-- Organize by Month: Create a new directory structure, organizing annotation files into folders by month.
-- Sort and Print Annotations: List all annotations from the most recent to the oldest.
-- Satellite Analysis: Identify the number of unique satellites, count annotations per satellite, and find the satellite used in the most recent annotation.
-- Unique Regions: Count how many distinct regions are represented across the annotations.
+In this session, you will analyze and organize satellite annotation files based on metadata encoded in their filenames. These files contain details such as date, satellite number, and unique regions, enabling you to extract meaningful insights.
+
+### Exercises  
+
+Given a zip file with a subfolder containing multiple annotations, where the naming convention for each file is:  
+```
+{DATE}_{TIME}SN{SATELLITE_NUMBER}QUICKVIEW_VISUAL{VERSION}{UNIQUE_REGION}.txt
+```
+in which:
+- **DATE**: Expressed as `YYYYMMDD` (year, month, and day), e.g., `20241201`, `20230321`...  
+- **TIME**: Expressed as `HHMMSS` (hour, minutes, and seconds), e.g., `2134307`.  
+- **SATELLITE_NUMBER**: An integer representing the satellite number.  
+- **VERSION**: Indicates the pipeline version, e.g., `"0_1_2"`, `"1_3_1"`.  
+- **UNIQUE_REGION**: Specifies a unique location in the form of a string, e.g., `SATL-2KM-10N_552_4164`.  
+
+**Exercises:**  
+1. Determine the total number of files in the annotations folder.  
+2. Count how many files follow the naming convention expressed above.  
+3. Calculate the number of annotations per month and year, and identify the month with the most annotation files.  
+4. Create a new annotations folder with subfolders corresponding to each month.  
+5. Print all the annotations, sorted from the most recent to the oldest.  
+6. Analyze satellites:  
+   - Count the total number of different satellites.  
+   - Determine how many annotations exist for each satellite.  
+   - Identify which satellite was used in the most recent annotation file.  
+7. Count the total number of unique regions.  
 
 ---
 
