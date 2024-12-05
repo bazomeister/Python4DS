@@ -3,9 +3,6 @@
 ### Satellite Annotations Analysis  
 
 In this session, you will analyze and organize satellite annotation files based on metadata encoded in their filenames. These files contain details such as date, satellite number, and unique regions, enabling you to extract meaningful insights.
-
-Here's the text exactly as you provided, formatted for a README file:
-
 ---
 
 ### Exercises  
